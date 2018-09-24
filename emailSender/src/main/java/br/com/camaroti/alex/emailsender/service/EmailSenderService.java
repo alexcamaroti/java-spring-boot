@@ -14,10 +14,10 @@ public class EmailSenderService {
 
 			emailDestiny.setHostName("smtp.googlemail.com");
 			emailDestiny.setSmtpPort(465);
-			emailDestiny.setAuthenticator(new DefaultAuthenticator("duvalkin.salazar@gmail.com", "11011994"));
+			emailDestiny.setAuthenticator(new DefaultAuthenticator("enteryouremail@email.com", "enteryourpassword"));
 			emailDestiny.setSSLOnConnect(true);
 
-			emailDestiny.setFrom("duvalkin.salazar@gmail.com");
+			emailDestiny.setFrom("enteryouremail@email.com");
 			emailDestiny.setSubject("A big reward to you");
 			emailDestiny.setMsg("Hello" + name + ". You are invited by VIPList!");
 			emailDestiny.addTo(emailReceiver);
